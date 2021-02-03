@@ -4,7 +4,12 @@ Bedsect is a web server tool for overlapping genomic regions from multiple datas
 
 Please check the [Insatallation Manual](./INSTALL.md) for more details.
 
-# Publication
+## Support
+
+If you have any suugesation, feature request or found a bug, please write us at `imgsb [at] ils.res.in`. 
+
+# Citation
+If you use Bedsect, please cite the following paper.
 
 Bedsect: An integrated web server application to perform intersection, visualization and functional annotation of genomic regions from multiple datasets
 Gyan Prakash Mishra, Arup Ghosh, Atimukta Jha, Sunil Kumar Raghav
