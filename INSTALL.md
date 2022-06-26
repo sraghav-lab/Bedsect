@@ -22,7 +22,7 @@
 ### Perl Modules
 
 + Statistics::Basic
-+ cs::Basic
++ File::Basename
 
 ### R packages
 
