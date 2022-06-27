@@ -15,4 +15,4 @@ Bedsect: An integrated web server application to perform intersection, visualiza
 Gyan Prakash Mishra, Arup Ghosh, Atimukta Jha, Sunil Kumar Raghav
 Front. Genet.; doi: https://doi.org/10.3389/fgene.2020.00003
 
-[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8B%20%20%E2%97%8B-orange)](https://fair-software.eu)
+[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8B-orange)](https://fair-software.eu)
