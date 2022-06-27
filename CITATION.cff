@@ -1,0 +1,34 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  BedSect: An Integrated Web Server Application to
+  Perform Intersection, Visualization, and Functional
+  Annotation of Genomic Regions From Multiple
+  Datasets
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Gyan Prakash Mishra
+    name-particle: Gyan
+    family-names: Prakash
+    name-suffix: Mishra
+  - given-names: Arup Ghosh
+    name-particle: Arup
+    name-suffix: Ghosh
+  - given-names: Atimukta Jha
+    name-particle: Atimukta
+    name-suffix: Jha
+  - given-names: Sunil Kumar Raghav
+    name-particle: Sunil
+    name-suffix: Raghav
+    family-names: Kumar
+identifiers:
+  - type: doi
+    value: 10.3389/fgene.2020.00003
+repository-code: 'https://github.com/sraghav-lab/Bedsect'
+url: 'https://imgsb.org/bedsect/'
+license: GPL-3.0
