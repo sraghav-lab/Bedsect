@@ -1,4 +1,4 @@
-base <- "/var/www/html/bedsect/server/files/"
+base <- "path to bedsect installation"
 if (!require(UpSetR)) install.packages('UpSetR')
 if (!require(corrplot)) install.packages('corrplot')
 if (!require(dplyr)) install.packages('dplyr')
@@ -118,6 +118,7 @@ server = function(input, output, session) {
                 	ID <- as.vector(bars %>% filter(bars[,i+1] == 1) %>% select(list) %>% unlist())
                 	obj[[i]] <- ID
         	}
+		#obj <- obj[rowSums(obj)>1,]
         	names(obj) <- name
         	cda <- jaccard(obj)
         	col2 <- colorRampPalette(c("#67001F", "#B2182B", "#D6604D", "#F4A582","#FDDBC7", "#FFFFFF", "#D1E5F0", "#92C5DE","#4393C3", "#2166AC", "#053061"))
@@ -136,11 +137,13 @@ server = function(input, output, session) {
 	    # content is a function with argument file. content writes the plot to the device
 	    content = function(file) {
 	      if(input$var3 == "png")
+		      	#Solved issue with UpsetR plots https://stackoverflow.com/a/14812779
 		        png(file,width =6000,height=2500,unit="px",res=400) # open the png device
-	      	else
-		        pdf(file, width=20, height=15,onefile=FALSE)#,width =1000,height=1000,unit="px") # open the pdf device
-			upsetPlot() 
-    			dev.off()  # turn the device off
+	    			    	
+	      else
+			pdf(file, width=20, height=15,onefile=FALSE)#,width =1000,height=1000,unit="px") # open the pdf device
+			print(upsetPlot())
+	    		dev.off()  # turn the device off
     		}		 
 	)
 #########################################################################################################
@@ -155,7 +158,7 @@ server = function(input, output, session) {
                         png(file,width =6000,height=2000,unit="px",res=400) # open the png device
                 else
                         pdf(file,width =20,height=20,onefile=FALSE) # open the pdf device
-                        corr_plot() 
+                        print(corr_plot()) 
                         dev.off()  # turn the device off
                 }
         )
